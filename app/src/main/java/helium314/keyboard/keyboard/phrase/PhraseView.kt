@@ -70,8 +70,7 @@ class PhraseView @JvmOverloads constructor(
             tab.tag = index
             tab.setOnClickListener(this@PhraseView)
             tab.isSelected = (index == 0)
-            colors.setBackground(tab, ColorType.STRIP_BACKGROUND)
-            colors.setColor(tab, ColorType.KEY_TEXT)
+            tab.setTextColor(colors.get(ColorType.KEY_TEXT))
             categoryTabs.add(tab)
             categoryTabContainer.addView(tab)
         }

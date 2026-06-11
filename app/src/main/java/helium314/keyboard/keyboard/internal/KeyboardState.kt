@@ -368,6 +368,7 @@ class KeyboardState(private val switchActions: SwitchActions) {
             }
             Mode.EMOJI -> setEmojiKeyboard()
             Mode.CLIPBOARD -> setClipboardKeyboard()
+            Mode.PHRASE -> setPhraseKeyboard()
             Mode.NUMPAD -> {}
         }
         if (withSliding) switchState = SwitchState.MOMENTARY_FROM_NUMPAD
